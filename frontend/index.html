@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registro de Mascotas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Registro de Mascotas para Adopción</h1>
+  <form id="formulario">
+    <input type="text" id="nombre" placeholder="Nombre" required />
+    <select id="tipo">
+      <option value="Perro">Perro</option>
+      <option value="Gato">Gato</option>
+    </select>
+    <input type="number" id="edad" placeholder="Edad" min="0" required />
+    <input type="text" id="contacto" placeholder="Contacto" required />
+    <button type="submit">Guardar</button>
+    <input type="hidden" id="idMascota" />
+  </form>
+
+  <div id="listaMascotas"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
